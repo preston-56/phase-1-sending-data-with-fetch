@@ -72,9 +72,6 @@ terminal.
 > `json-server`. Follow the steps in [this gist][live-server settings] (you'll
 > only need to do this once), then come back to this lesson.
 
-[live-server]: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
-[live-server settings]: https://gist.github.com/ihollander/cc5f36c6447d15dea6a16f68d82aacf7
-
 ## Analyze Data Sent in an HTML Form
 
 Let's take a look at an HTML `<form>` (see `sample_form.html` in this repo):
@@ -146,7 +143,7 @@ information about the data being sent.
 
 One very common header is [`"Content-Type"`][content-type]. `"Content-Type"` is
 used to indicate what format the data being sent is in. With JavaScript's
-`fetch()`, [JSON][json] is the most common format we will be using. We want to
+`fetch()`, [JSON] is the most common format we will be using. We want to
 make sure that the destination of our POST request knows this. To do this, we'll
 include the `"Content-Type"` header:
 
@@ -181,7 +178,7 @@ const configurationObject = {
 };
 ```
 
-There are many other [headers][headers] available for particular uses. Some are
+There are many other [headers] available for particular uses. Some are
 used to send credentials or user authentication keys. Others are used to send
 cookies containing user info. `"Content-Type"` and `"Accept"` are two that we'll
 see the most throughout the remainder of this course.
@@ -333,7 +330,7 @@ in the browser, make sure to be on a page like `index.html` or
 
 Just like when we use `fetch()` to send GET requests, we have to handle
 responses to `fetch()`. As mentioned before, servers will send a
-[Response][response] that might include useful information. To access this
+[Response] that might include useful information. To access this
 information, we use a series of calls to `then()` which are
 given function _callbacks_.
 
@@ -515,6 +512,8 @@ requests! This means we have the tools we need to stitch together server updates
 (reads **and** updates) with DOM updating and event handling. We're almost ready
 to build the "Simple Liker" from scratch!
 
+[live-server]: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+[live-server settings]: https://gist.github.com/ihollander/cc5f36c6447d15dea6a16f68d82aacf7
 [json-server]: https://github.com/typicode/json-server
 [p]: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#Parameters
 [json]: https://www.json.org/
